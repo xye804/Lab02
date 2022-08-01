@@ -82,7 +82,11 @@ def toss_coin():
     """TODO: Add your code here
         Hint: Using random.randint() function.
     """
-    coin = 'Head'
+    rand = random.randint(0, 1)
+    if rand == 0:
+        coin = 'Head'
+    else:
+        coin = 'Tail'
     return coin
 
 
